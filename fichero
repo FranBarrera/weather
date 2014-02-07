@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+import json
+print ""
+
+print "Aplicacion Provincias"
+
+print ""
+
+provincias = ['1. Almería', '2. Cádiz','3. Córdoba','4. Granada','5. Huelva','6. Jaén','7. Málaga','8. Sevilla']
+
+for provincia in provincias:
+	print provincia
+
+print ""
+
+respuesta = (int(raw_input("Elige una Provincia para ver el tiempo: "))-1)
+
+print 'El tiempo para la Provincia de:',provincias[respuesta][3:]
+print""
+
