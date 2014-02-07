@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import json
-print ""
+import os
 
 print "Aplicacion Provincias"
 
@@ -15,6 +15,11 @@ print ""
 
 respuesta = (int(raw_input("Elige una Provincia para ver el tiempo: "))-1)
 
+os.system("clear")
+
 print 'El tiempo para la Provincia de:',provincias[respuesta][3:]
 print""
 
+tiempo = ('api.openweathermap.org/data/2.5/weather')(params={'q':'%s,spain' % provincia[respuesta][3:]})
+
+print tiempo
